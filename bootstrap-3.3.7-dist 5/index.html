@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>UN Data Browser</title>
+    <title>(UN logo) Data Browser</title>
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -18,21 +18,23 @@
     <![endif]-->
   </head>
   <body>
+
     <div class='container'>
+
     <div class="row">
-      <div class="col-sm-8">
+      <div class="col-md-8">
     <h1>UN Data Browser</h1>
       <div class="col-sm-4">
         <button type="button" class="btn btn-primary btn-lg">Add New Series</button>
         <!--not sure what type of lable to go here maybe the user name  -->
-        <div class="dropdown" id="UserName">
+        <div class="dropdown" id="UserSettings">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             John Doe   <span class="caret"></span>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">Edit Profile</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Log Out</a>
           </div>
         </div>
         <div class="dropdown" id="PopAgeSex">
@@ -64,10 +66,16 @@
 <!-- Add function to reset form -->
 
 
-  </div>
+		<p class="results">Showing <strong>17</strong><strong> Data Records</strong> for <strong>Population by Age and Sex</strong> in <strong>Afghanistan</strong>
+    </p>
+
+
+
+<span class="glyphicon glyphicon-filter" aria-hidden="true"> Filter</span>  </div>
   <table class="table table-striped">
   <thead>
-    <tr>
+    <tr id="TableHeader">
+      <th>#</th>
       <th>Indicator</th>
       <th>Age Distribution</th>
       <th>location Type</th>
@@ -82,7 +90,7 @@
 
     </tr>
   </thead>
-  <tbody>
+  <tbody id="tablebody">
     <tr>
       <th scope="row">1</th>
       <td>Pop, Age & Sex</td>
@@ -331,9 +339,17 @@
 
 
 
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+    <footer>
+      <p>(UN logo)</p>
+      <p>&copy; 2017 UN Population Division, All Rights Reserved.</p>
+
+    </footer>
+
   </body>
 </html>
