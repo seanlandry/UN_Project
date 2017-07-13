@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>(UN logo) Data Browser</title>
+
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+
+    <body id="data-browser">
+
+
+
+        <!--Start Container-->
+
+        <div class="container-fluid">
+
+          <div class="row header">
+           <div class="col-xs-8 logo"><img src="images/un-logo-50px.png">UN Data Browser</div>
+           <div class="col-xs-4 identity">John Doe</div>
+         </div>
+
+       </div>
+
+
+
+      <div class="container-fluid">
+        <div class="row selections">
+          <div class="col-xs-3">Select Country</div>
+          <div class="col-xs-3">Select Indicator</div>
+          <div class="col-xs-3">Date 1</div>
+          <div class="col-xs-3">Date 2</div>
+        </div>
+      </div>
+
+    <div class="h-row">
+      <div class="container">
+
+        <div class="row results">
+          <div class="col-xs-12"><p>Showing records</p></div>
+        </div>
+      </div>
+    </div>
+
+  </div> 
+
+  <div class='container-fluid'>
+
+    <p class="filter">Filter</p>
+    <div class="row data">
+      <div class="col-xs-12">
+        <div class="row sort">
+          <div class="col-xs-12">SORTING</div>
+        </div>
+        <div class="cont-table">
+          <table class="table table-striped">
+            <thead>
+              <tr id="TableHeader">
+                <th>#</th>
+                <th>Indicator</th>
+                <th>Age Distribution</th>
+                <th>location Type</th>
+                <th>Ref Year</th>
+                <th>Process</th>
+                <th>Catalog</th>
+                <th>Source</th>
+                <th>Source Year</th>
+                <th>Status</th>
+                <th>Statistical Concept</th>
+                <th>Type</th>
+
+              </tr>
+            </thead>
+            <tbody id="tablebody">
+              <tr>
+                <th scope="row">1</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td>Pop, Age & Sex</td>
+                <td>Abridged</td>
+                <td>Whole Area</td>
+                <td>1950</td>
+                <td>Census</td>
+                <td>Albania 1950 Census</td>
+                <td>DYB</td>
+                <td>1960</td>
+                <td>Final</td>
+                <td>De-Facto</td>
+                <td>District (standard)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+    <div class='container-fluid'>
+      <div class="row footer">
+        <div class="col-xs-12">
+          <footer>
+            <h2><img src="images/un-logo-30px.png"> United Nations</h2>
+            <p><span>&copy; 2017 UN Population Division, All Rights Reserved.</span></p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
