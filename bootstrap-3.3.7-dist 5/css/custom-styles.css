@@ -1,1 +1,75 @@
 /*Custom Styles for UN
+
+COLORS:
+GREYS
+borders: #E5E5E5
+backgrounds: #F2F2F2;
+
+WHITE: #FFF;
+
+BLUES
+
+*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #F2F2F2;
+}
+
+.logo img{
+	margin-right: 8px;
+}
+
+.logo {
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.h-row {
+	background-color: #FFF;
+	border-bottom: solid 1px #E5E5E5;
+}
+
+.header {
+	height: 80px;
+	line-height: 80px;
+}
+
+.header span {
+	background-color: red;
+	margin-right: 8px;
+}
+
+.identity {
+	text-align: right;
+}
+
+.selections {
+	height: 60px;
+	line-height: 60px;
+}
+
+.results p{
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+}
+
+.cont-table {
+
+}
+
+.cont-table table th {
+	color: #F2F2F2;
+	font-size: 16px;
+	font-weight: normal;
+}
+
+.filter {
+	margin: 16px 0;
+}
+
+.data {
+	border: solid 1px #CCC;
+	margin-bottom: 50px;
+}
