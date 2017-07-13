@@ -9,6 +9,7 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -22,7 +23,7 @@
     <div class='container'>
 
     <div class="row">
-      <div class="col-md-8">
+      <div class="col-xs-12">
     <h1>UN Data Browser</h1>
       <div class="col-sm-4">
         <button type="button" class="btn btn-primary btn-lg">Add New Series</button>
@@ -36,6 +37,8 @@
             <a class="dropdown-item" href="#">Settings</a>
             <a class="dropdown-item" href="#">Log Out</a>
           </div>
+        </div>
+
         </div>
         <div class="dropdown" id="PopAgeSex">
           <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -69,9 +72,50 @@
 		<p class="results">Showing <strong>17</strong><strong> Data Records</strong> for <strong>Population by Age and Sex</strong> in <strong>Afghanistan</strong>
     </p>
 
+    <br/>
+    <div class="container">
+      <div class="row">
+           <div class="col-lg-12">
+         <div class="button-group">
+            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sliders">Filter</i> <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="#" class="small" data-value="Filters" tabIndex="-1">Filters</a></li>
+      <li><a href="#" class="small" data-value="AgeDistribution" tabIndex="-1">Age Distribution</a></li>
+      <li><a href="#" class="small" data-value="Abridged" tabIndex="-1"><input type="radio"/>&nbsp;Abridged</a></li>
+      <li><a href="#" class="small" data-value="Completed" tabIndex="-1"><input type="radio"/>&nbsp;Completed</a></li>
+      <li><a href="#" class="small" data-value="Locationtype" tabIndex="-1">Location Type</a></li>
+
+      <li><a href="#" class="small" data-value="WholeArea" tabIndex="-1"><input type="checkbox"/>&nbsp;Whole Area</a></li>
+      <li><a href="#" class="small" data-value="Rural" tabIndex="-1"><input type="checkbox"/>&nbsp;Rural</a></li>
+      <li><a href="#" class="small" data-value="Urban" tabIndex="-1"><input type="checkbox"/>&nbsp;Urban</a></li>
+      <li><a href="#" class="small" data-value="TypeOfSubgroup" tabIndex="-1">Type of Subgroup</a></li>
+      <li><a href="#" class="small" data-value="Total" tabIndex="-1"><input type="checkbox"/>&nbsp;Total</a></li>
+      <li><a href="#" class="small" data-value="DataProcessType" tabIndex="-1">Data process Type</a></li>
+      <li><a href="#" class="small" data-value="Census" tabIndex="-1"><input type="checkbox"/>&nbsp;Census</a></li>
+      <li><a href="#" class="small" data-value="Estimate" tabIndex="-1"><input type="checkbox"/>&nbsp;Estimate</a></li>
+      <li><a href="#" class="small" data-value="Process" tabIndex="-1">Process info</a></li>
+      <li><a href="#" class="small" data-value="Process1" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 1</a></li>
+      <li><a href="#" class="small" data-value="Process2" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 2</a></li>
+      <li><a href="#" class="small" data-value="Source" tabIndex="-1">Source</a></li>
+      <li><a href="#" class="small" data-value="Source1" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 1</a></li>
+      <li><a href="#" class="small" data-value="Source2" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 2</a></li>
+      <li><a href="#" class="small" data-value="StatisticalConcept" tabIndex="-1">Statistical Concept</a></li>
+      <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 1</a></li>
+      <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 2</a></li>
+      <li><a href="#" class="small" data-value="DataType" tabIndex="-1">Data Type</a></li>
+      <li><a href="#" class="small" data-value="DataType1" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 1</a></li>
+      <li><a href="#" class="small" data-value="DataType2" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 2</a></li>
+      <li><button type="button" class="btn btn-primary btn-lg">Apply</button></li>
 
 
-<span class="glyphicon glyphicon-filter" aria-hidden="true"> Filter</span>  </div>
+</ul>
+
+      </div>
+    </div>
+      </div>
+    </div>
+
+
   <table class="table table-striped">
   <thead>
     <tr id="TableHeader">
