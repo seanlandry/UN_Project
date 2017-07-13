@@ -36,7 +36,6 @@ body {
 }
 
 .header span {
-	background-color: red;
 	margin-right: 8px;
 }
 
@@ -55,9 +54,7 @@ body {
 	margin: 0;
 }
 
-.cont-table {
-
-}
+.cont-table {}
 
 .cont-table table th {
 	color: #F2F2F2;
