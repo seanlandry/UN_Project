@@ -70,9 +70,9 @@ body {
 	border: solid 1px #CCC;
 	margin-bottom: 50px;
 }
-.form-control-date{
-  width: 60px;
-}
-.Select{
-text-align: right;
+.input-group{
+  width: 50%;
+  background-color: blue;
+  height: 10%;
+
 }
