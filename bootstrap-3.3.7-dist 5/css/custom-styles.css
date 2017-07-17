@@ -50,7 +50,11 @@ body {
   background-color: #008FD5;
   color: white;
   width: 250px;
+  height:40px;
   padding-left: 5px;
+  -webkit-appearance: none;
+  text-align: center;
+  font-size: 13px;
 }
 .form-inline{
   border-radius: 1px !important;
@@ -66,9 +70,11 @@ input[type="number"]{
 
 }
 #topselectors{
-
+height: 45px;
 }
-
+.date-field{
+  text-align: center;
+}
 .form-group{
   border-radius: 1px !important;
   background-color: #F2F2F2;
@@ -123,13 +129,22 @@ p{
 
 .cont-table table th {
 	color: #F2F2F2;
-	font-size: 16px;
+	font-size: 10px;
 	font-weight: normal;
 }
 .button-group{
   background-color: #323232:
 }
-
+#table-view-discription{
+  color: #fff;
+  background-color: black;
+}
+#afghanistan{
+  color: #fff;
+}
+#exTab1{
+  font-size: 10px;
+}
 .filter {
 	margin: 16px 0;
 }
