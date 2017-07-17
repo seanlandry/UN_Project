@@ -17,6 +17,10 @@ body {
   font-size: 13px;
   color: #4D4D4D;
 }
+#selectpicker{
+  background-color: #008FD5;
+  color: white;
+}
 #select{
   width: 250px;
   height: 40px;
