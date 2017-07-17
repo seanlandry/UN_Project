@@ -23,24 +23,53 @@
       <![endif]-->
 </head>
 
-<div class="cont-filter">
-<span class="close">X</span>
+
+<!-- Side filter -->
+
+<div id="cont-filter" class="cont-filter">
+    <span class="">X</span>
     <h2>Filters</h2>
     <h3>Age Distribution<span class="info">i</span></h3>
+    <h3 class="open-close"><a href="#">-</a></h3>
     <div class="filter-row"><input type="radio" name="age-distribution" value="abridged">Abridged<br></div>
     <div class="filter-row"><input type="radio" name="age-distribution" value="complete">Complete<br></div>
 
     <h3>Location Type<span class="info">i</span></h3>
-
+    <h3 class="open-close"><a href="#">-</a></h3>
     <div class="filter-row"><input type="checkbox" name="location" value="WholeArea">Whole Area</div>
     <div class="filter-row"><input type="checkbox" name="location" value="Rural">Rural</div>
     <div class="filter-row"><input type="checkbox" name="location" value="Urban">Urban</div>
+
+    <h3>Type of Subgroup<span class="info">i</span></h3>
+    <h3 class="open-close"><a href="#">-</a></h3>
+    <div class="filter-row"><input type="checkbox" name="Subgroup" value="Total">Total</div>
+
+    <h3>Data Process Type<span class="info">i</span></h3>
+    <div class="filter-row"><input type="checkbox" name="processType" value="Census">Census</div>
+    <div class="filter-row"><input type="checkbox" name="processType" value="Estimate">Estimate</div>
+
+    <h3>Process<span class="info">i</span></h3>
+    <h3 class="open-close"><a href="#">+</a></h3>
+
+    <h3>Source</h3>
+    <h3 class="open-close"><a href="#">+</a></h3>
+
+    <h3>Status</h3>
+    <h3 class="open-close"><a href="#">+</a></h3>
+
+    <h3>Statistical Concept</h3>
+    <h3 class="open-close"><a href="#">+</a></h3>
+
+    <h3>Data Type</h3>
+    <h3 class="open-close"><a href="#">+</a></h3>
+
+
 
 </div>
 
 <body id="data-browser">
 
-<!-- Sean's comment -->
+
 
     <!--Start Container-->
 
@@ -58,7 +87,7 @@
 
 
 
-    <div class="container" id="topselectors">
+    <div class="container-fluid" id="topselectors">
         <div class="form-inline" role="form">
             <div class="row selections">
                 <div class="col-xs-4"><select class="form-control-select">
@@ -118,101 +147,9 @@
         <div class="container">
             <div class="row" id="dropdown-menu">
                 <div class="col-xs-3">
-                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sliders"> Filter</i></button>
-                    <ul class="dropdown-menu">
-                        <li><a href="#" class="small" data-value="Filters" tabIndex="-1">Filters</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#" class="small" data-value="AgeDistribution" tabIndex="-1">Age Distribution</a></li>
-                        <li class="divider"></li>
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" onclick="$('#cont-filter').toggle();"><i class="fa fa-sliders"> Filter</i> </button>
 
-                        <li>
-                            <a href="#" class="small" data-value="Abridged" tabIndex="-1"><input type="radio" />&nbsp;Abridged</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Completed" tabIndex="-1"><input type="radio" />&nbsp;Completed</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="Locationtype" tabIndex="-1">Location Type</a></li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#" class="small" data-value="WholeArea" tabIndex="-1"><input type="checkbox" />&nbsp;Whole Area</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Rural" tabIndex="-1"><input type="checkbox" />&nbsp;Rural</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Urban" tabIndex="-1"><input type="checkbox" />&nbsp;Urban</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="TypeOfSubgroup" tabIndex="-1">Type of Subgroup</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="Total" tabIndex="-1"><input type="checkbox" />&nbsp;Total</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="DataProcessType" tabIndex="-1">Data process Type</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="Census" tabIndex="-1"><input type="checkbox" />&nbsp;Census</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Estimate" tabIndex="-1"><input type="checkbox" />&nbsp;Estimate</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="Process" tabIndex="-1">Process info</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="Process1" tabIndex="-1"><input type="checkbox" />&nbsp;Process 1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Process2" tabIndex="-1"><input type="checkbox" />&nbsp;Process 2</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="Source" tabIndex="-1">Source</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="Source1" tabIndex="-1"><input type="checkbox" />&nbsp;Source 1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="Source2" tabIndex="-1"><input type="checkbox" />&nbsp;Source 2</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="StatisticalConcept" tabIndex="-1">Statistical Concept</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox" />&nbsp;Statistical Concept 1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox" />&nbsp;Statistical Concept 2</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><a href="#" class="small" data-value="DataType" tabIndex="-1">Data Type</a></li>
-                        <li class="divider"></li>
-
-                        <li>
-                            <a href="#" class="small" data-value="DataType1" tabIndex="-1"><input type="checkbox" />&nbsp;Data Type 1</a>
-                        </li>
-                        <li>
-                            <a href="#" class="small" data-value="DataType2" tabIndex="-1"><input type="checkbox" />&nbsp;Data Type 2</a>
-                        </li>
-                        <li class="divider"></li>
-
-                        <li><button type="button" id="apply" class="btn btn-primary btn-lg">Apply</button></li>
-
-
-                    </ul>
+</a>
 
 
                 </div>
