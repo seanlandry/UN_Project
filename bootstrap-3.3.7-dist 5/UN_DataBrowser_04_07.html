@@ -29,406 +29,476 @@
 
     <!--Start Container-->
 
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="row header">
-            <div class="col-xs-6 logo"><img src="images/un-logo-50px.png">UN Data Browser</div>
+            <div class="col-xs-6 logo"><img src="images/un-logo-50px.png">Data Browser</div>
             <div class="col-xs-5 text-right"><button type="button" class="btn btn-primary">Add New Series</button></div>
             <div class="col-xs-1 pull-right identity"><button type="button" class="btn btn-default">John Doe</button></div>
 
         </div>
-<div class=h-row></div>
+        <div class=h-row></div>
 
     </div>
 
 
 
-    <div class="container-fluid">
-      <div class="form-inline" role="form">
-        <div class="row selections">
-            <div class="col-xs-2"><select class="form-control">
+    <div class="container" id="topselectors">
+        <div class="form-inline" role="form">
+            <div class="row selections">
+                <div class="col-xs-4"><select class="form-control-select">
             <option>Select Indicator</option>
             <option>Population, Age and Sex</option>
-            <option>option 2</option>
-            <option>option 3</option>
+            <option>choice 2</option>
+            <option>choice 3</option>
           </select></div>
 
-            <div class="col-xs-2"><select class="form-control">
+                <div class="col-xs-4"><select class="form-control-select">
             <option>Select a Country</option>
             <option>Afghanistan</option>
-            <option>option 2</option>
-            <option>option 3</option>
+            <option>choice 2</option>
+            <option>choice 3</option>
           </select></div>
+<div class="col-xs-4">
+                <form class="form-inline" role="form">
+                    <div class="form-group">
+                        <label for="DATES">DATES</label>
+                        <input type="number" class="date-field" id="DATES">
+                    </div>
+                    <div class="form-group">
+                        <label for="DATES"> - </label>
+                        <input type="number" class="date-field" id="DATES">
+                    </div>
 
-          <form class="form-inline" role="form">
-             <div class="form-group">
-                <label for="DATES">DATES</label>
-          	  <input type="number" class="form-control" id="DATES">
-             </div>
-             <div class="form-group">
-               <label for="DATES"> - </label>
-             <input type="number" class="form-control" id="DATES">
-           </div>
-           <div class="col-xs-1 pull-right reset"><button type="submit" class="btn btn-default" id="reset">Reset</button></div>
+                    <div class="col-xs-1 pull-right reset"><button type="submit" class="btn btn-default" id="reset">Reset</button></div>
 
-          </form>
+                </form>
 
+</div>
 
+            </div>
         </div>
-      </div>
     </div>
 
-        <div class="h-row">
-            </div>
+    <div class="h-row">
+    </div>
 
-        <div class="container">
-            <div class="row results">
-                <div class="col-xs-12">
-                    <p>Showing records</p>
-                </div>
+    <div class="container">
+        <div class="row results">
+            <div class="col-xs-12">
+                <p class="text-muted">Showing records</p>
+                <p> 9 Data Records</p>
+                <p class="text-muted"> for</p>
+                <p> Population by Age and Sex</p>
+                <p class="text-muted"> in</p>
+                <p> Afghanistan</p>
+
             </div>
+        </div>
 
         <div class="h-row"></div>
     </div>
     <div class='container-fluid'>
 
-      <div class="container">
-        <div class="row">
-         <div class="col-xs-3">
-           <div class="button-group">
-            <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sliders"> Filter</i> <span class="caret"></span></button>
-            <ul class="dropdown-menu">
-              <li><a href="#" class="small" data-value="Filters" tabIndex="-1">Filters</a></li>
-              <li><a href="#" class="small" data-value="AgeDistribution" tabIndex="-1">Age Distribution</a></li>
-              <li><a href="#" class="small" data-value="Abridged" tabIndex="-1"><input type="radio"/>&nbsp;Abridged</a></li>
-              <li><a href="#" class="small" data-value="Completed" tabIndex="-1"><input type="radio"/>&nbsp;Completed</a></li>
-              <li><a href="#" class="small" data-value="Locationtype" tabIndex="-1">Location Type</a></li>
+        <div class="container">
+            <div class="row" id="dropdown-menu">
+                <div class="col-xs-3">
+                    <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sliders"> Filter</i></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="small" data-value="Filters" tabIndex="-1">Filters</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#" class="small" data-value="AgeDistribution" tabIndex="-1">Age Distribution</a></li>
+                        <li class="divider"></li>
 
-              <li><a href="#" class="small" data-value="WholeArea" tabIndex="-1"><input type="checkbox"/>&nbsp;Whole Area</a></li>
-              <li><a href="#" class="small" data-value="Rural" tabIndex="-1"><input type="checkbox"/>&nbsp;Rural</a></li>
-              <li><a href="#" class="small" data-value="Urban" tabIndex="-1"><input type="checkbox"/>&nbsp;Urban</a></li>
-              <li><a href="#" class="small" data-value="TypeOfSubgroup" tabIndex="-1">Type of Subgroup</a></li>
-              <li><a href="#" class="small" data-value="Total" tabIndex="-1"><input type="checkbox"/>&nbsp;Total</a></li>
-              <li><a href="#" class="small" data-value="DataProcessType" tabIndex="-1">Data process Type</a></li>
-              <li><a href="#" class="small" data-value="Census" tabIndex="-1"><input type="checkbox"/>&nbsp;Census</a></li>
-              <li><a href="#" class="small" data-value="Estimate" tabIndex="-1"><input type="checkbox"/>&nbsp;Estimate</a></li>
-              <li><a href="#" class="small" data-value="Process" tabIndex="-1">Process info</a></li>
-              <li><a href="#" class="small" data-value="Process1" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 1</a></li>
-              <li><a href="#" class="small" data-value="Process2" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 2</a></li>
-              <li><a href="#" class="small" data-value="Source" tabIndex="-1">Source</a></li>
-              <li><a href="#" class="small" data-value="Source1" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 1</a></li>
-              <li><a href="#" class="small" data-value="Source2" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 2</a></li>
-              <li><a href="#" class="small" data-value="StatisticalConcept" tabIndex="-1">Statistical Concept</a></li>
-              <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 1</a></li>
-              <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 2</a></li>
-              <li><a href="#" class="small" data-value="DataType" tabIndex="-1">Data Type</a></li>
-              <li><a href="#" class="small" data-value="DataType1" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 1</a></li>
-              <li><a href="#" class="small" data-value="DataType2" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 2</a></li>
-              <li><button type="button" class="btn btn-primary btn-lg">Apply</button></li>
+                        <li>
+                            <a href="#" class="small" data-value="Abridged" tabIndex="-1"><input type="radio" />&nbsp;Abridged</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Completed" tabIndex="-1"><input type="radio" />&nbsp;Completed</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="Locationtype" tabIndex="-1">Location Type</a></li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#" class="small" data-value="WholeArea" tabIndex="-1"><input type="checkbox" />&nbsp;Whole Area</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Rural" tabIndex="-1"><input type="checkbox" />&nbsp;Rural</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Urban" tabIndex="-1"><input type="checkbox" />&nbsp;Urban</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="TypeOfSubgroup" tabIndex="-1">Type of Subgroup</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="Total" tabIndex="-1"><input type="checkbox" />&nbsp;Total</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="DataProcessType" tabIndex="-1">Data process Type</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="Census" tabIndex="-1"><input type="checkbox" />&nbsp;Census</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Estimate" tabIndex="-1"><input type="checkbox" />&nbsp;Estimate</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="Process" tabIndex="-1">Process info</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="Process1" tabIndex="-1"><input type="checkbox" />&nbsp;Process 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Process2" tabIndex="-1"><input type="checkbox" />&nbsp;Process 2</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="Source" tabIndex="-1">Source</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="Source1" tabIndex="-1"><input type="checkbox" />&nbsp;Source 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="Source2" tabIndex="-1"><input type="checkbox" />&nbsp;Source 2</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="StatisticalConcept" tabIndex="-1">Statistical Concept</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox" />&nbsp;Statistical Concept 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox" />&nbsp;Statistical Concept 2</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><a href="#" class="small" data-value="DataType" tabIndex="-1">Data Type</a></li>
+                        <li class="divider"></li>
+
+                        <li>
+                            <a href="#" class="small" data-value="DataType1" tabIndex="-1"><input type="checkbox" />&nbsp;Data Type 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="small" data-value="DataType2" tabIndex="-1"><input type="checkbox" />&nbsp;Data Type 2</a>
+                        </li>
+                        <li class="divider"></li>
+
+                        <li><button type="button" id="apply" class="btn btn-primary btn-lg">Apply</button></li>
 
 
-            </ul>
+                    </ul>
 
-          </div>
+
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-      </div>
 
 
-<div id="exTab1" class="container">
-<ul  class="nav nav-pills">
-    <li class="active">
-      <a  href="#Overview" data-toggle="tab">Overview &#10515</a>
-    </li>
-    <li><a href="#TabDetail" data-toggle="tab">Tab Detail &#10515</a>
-    </li>
-    <li><a href="#RecordShort" data-toggle="tab">Record-Short &#10515</a>
-    </li>
-    <li><a href="#RecordLong" data-toggle="tab">Record-Long &#10515</a>
-    </li>
-    <li><a href="#Database" data-toggle="tab">Database &#10515</a>
-    </li>
-  </ul>
+    <div id="exTab1" class="container">
+        <ul class="nav nav-pills">
+            <li class="active">
+                <a href="#Overview" data-toggle="tab">Overview &#10515</a>
+            </li>
+            <li><a href="#TabDetail" data-toggle="tab">Tab Detail   &#10515</a>
+            </li>
+            <li><a href="#RecordShort" data-toggle="tab">Record-Short &#10515</a>
+            </li>
+            <li><a href="#RecordLong" data-toggle="tab">Record-Long &#10515</a>
+            </li>
+            <li><a href="#Database" data-toggle="tab">Database &#10515</a>
+            </li>
+        </ul>
 
-    <div class="tab-content clearfix">
-      <div class="tab-pane active" id="Overview">
-        <h3>Overview table</h3>
-        <div class="cont-table">
-              <table class="table table-striped">
-                  <thead>
-                      <tr id="TableHeader">
-                          <th>#</th>
-                          <th>Indicator</th>
-                          <th>Age Distribution</th>
-                          <th>location Type</th>
-                          <th>Ref Year</th>
-                          <th>Process</th>
-                          <th>Catalog</th>
-                          <th>Source</th>
-                          <th>Source Year</th>
-                          <th>Status</th>
-                          <th>Statistical Concept</th>
-                          <th>Type</th>
+        <div class="tab-content clearfix">
+            <div class="tab-pane active" id="Overview">
+                <h3>Overview table</h3>
+                <div class="cont-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="TableHeader">
+                                <th>#</th>
+                                <th>Indicator</th>
+                                <th>Age Distribution</th>
+                                <th>location Type</th>
+                                <th>Ref Year</th>
+                                <th>Process</th>
+                                <th>Catalog</th>
+                                <th>Source</th>
+                                <th>Source Year</th>
+                                <th>Status</th>
+                                <th>Statistical Concept</th>
+                                <th>Type</th>
 
-                      </tr>
-                  </thead>
-                  <tbody id="tablebody">
-                      <tr>
-                          <th scope="row">1</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">2</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
 
-                  </tbody>
-              </table>
-          </div>
-      </div>
-      <div class="tab-pane" id="TabDetail">
-        <h3>tab detail table</h3>
-        <div class="cont-table">
-              <table class="table table-striped">
-                  <thead>
-                      <tr id="TableHeader">
-                          <th>#</th>
-                          <th>Age</th>
-                          <th>Location</th>
-                          <th>Both Sexes</th>
-                          <th>Males</th>
-                          <th>Females</th>
-
-
-                      </tr>
-                  </thead>
-                  <tbody id="tablebody">
-                      <tr>
-                          <th scope="row">1</th>
-                          <td>Under 1</td>
-                          <td>Whole Area</td>
-                          <td>50,000</td>
-                          <td>20,000</td>
-                          <td>30,000</td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="TabDetail">
+                <h3>tab detail table</h3>
+                <div class="cont-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="TableHeader">
+                                <th>#</th>
+                                <th>Age</th>
+                                <th>Location</th>
+                                <th>Both Sexes</th>
+                                <th>Males</th>
+                                <th>Females</th>
 
 
-                      </tr>
-                      <tr>
-                          <th scope="row">2</th>
-                          <td>1-4</td>
-                          <td>Whole Area</td>
-                          <td>60,000</td>
-                          <td>270,000</td>
-                          <td>33,000</td>
-                      </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Under 1</td>
+                                <td>Whole Area</td>
+                                <td>50,000</td>
+                                <td>20,000</td>
+                                <td>30,000</td>
 
-                  </tbody>
-              </table>
-          </div>
-      </div>
-      <div class="tab-pane" id="RecordShort">
-        <h3>Record Short content</h3>
-        <div class="cont-table">
-              <table class="table table-striped">
-                  <thead>
-                      <tr id="TableHeader">
-                          <th>#</th>
-                          <th>Indicator</th>
-                          <th>Age Distribution</th>
-                          <th>location Type</th>
-                          <th>Ref Year</th>
-                          <th>Process</th>
-                          <th>Catalog</th>
-                          <th>Source</th>
-                          <th>Source Year</th>
-                          <th>Status</th>
-                          <th>Statistical Concept</th>
-                          <th>Type</th>
 
-                      </tr>
-                  </thead>
-                  <tbody id="tablebody">
-                      <tr>
-                          <th scope="row">1</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">2</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>1-4</td>
+                                <td>Whole Area</td>
+                                <td>60,000</td>
+                                <td>270,000</td>
+                                <td>33,000</td>
+                            </tr>
 
-                  </tbody>
-              </table>
-          </div>
-      </div>
-        <div class="tab-pane" id="RecordLong">
-        <h3>Record - long content</h3>
-          <div class="cont-table">
-              <table class="table table-striped">
-                  <thead>
-                      <tr id="TableHeader">
-                          <th>#</th>
-                          <th>Indicator</th>
-                          <th>Age Distribution</th>
-                          <th>location Type</th>
-                          <th>Ref Year</th>
-                          <th>Process</th>
-                          <th>Catalog</th>
-                          <th>Source</th>
-                          <th>Source Year</th>
-                          <th>Status</th>
-                          <th>Statistical Concept</th>
-                          <th>Type</th>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="RecordShort">
+                <h3>Record Short content</h3>
+                <div class="cont-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="TableHeader">
+                                <th>#</th>
+                                <th>Indicator</th>
+                                <th>Age Distribution</th>
+                                <th>location Type</th>
+                                <th>Ref Year</th>
+                                <th>Process</th>
+                                <th>Catalog</th>
+                                <th>Source</th>
+                                <th>Source Year</th>
+                                <th>Status</th>
+                                <th>Statistical Concept</th>
+                                <th>Type</th>
 
-                      </tr>
-                  </thead>
-                  <tbody id="tablebody">
-                      <tr>
-                          <th scope="row">1</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">2</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
 
-                  </tbody>
-              </table>
-          </div>
-      </div>
-      <div class="tab-pane" id="Database">
-        <h3>Database content</h3>
-        <div class="cont-table">
-              <table class="table table-striped">
-                  <thead>
-                      <tr id="TableHeader">
-                          <th>#</th>
-                          <th>Indicator</th>
-                          <th>Age Distribution</th>
-                          <th>location Type</th>
-                          <th>Ref Year</th>
-                          <th>Process</th>
-                          <th>Catalog</th>
-                          <th>Source</th>
-                          <th>Source Year</th>
-                          <th>Status</th>
-                          <th>Statistical Concept</th>
-                          <th>Type</th>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="RecordLong">
+                <h3>Record - long content</h3>
+                <div class="cont-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="TableHeader">
+                                <th>#</th>
+                                <th>Indicator</th>
+                                <th>Age Distribution</th>
+                                <th>location Type</th>
+                                <th>Ref Year</th>
+                                <th>Process</th>
+                                <th>Catalog</th>
+                                <th>Source</th>
+                                <th>Source Year</th>
+                                <th>Status</th>
+                                <th>Statistical Concept</th>
+                                <th>Type</th>
 
-                      </tr>
-                  </thead>
-                  <tbody id="tablebody">
-                      <tr>
-                          <th scope="row">1</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
-                      <tr>
-                          <th scope="row">2</th>
-                          <td>Pop, Age & Sex</td>
-                          <td>Abridged</td>
-                          <td>Whole Area</td>
-                          <td>1950</td>
-                          <td>Census</td>
-                          <td>Albania 1950 Census</td>
-                          <td>DYB</td>
-                          <td>1960</td>
-                          <td>Final</td>
-                          <td>De-Facto</td>
-                          <td>District (standard)</td>
-                      </tr>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
 
-                  </tbody>
-              </table>
-          </div>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane" id="Database">
+                <h3>Database content</h3>
+                <div class="cont-table">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr id="TableHeader">
+                                <th>#</th>
+                                <th>Indicator</th>
+                                <th>Age Distribution</th>
+                                <th>location Type</th>
+                                <th>Ref Year</th>
+                                <th>Process</th>
+                                <th>Catalog</th>
+                                <th>Source</th>
+                                <th>Source Year</th>
+                                <th>Status</th>
+                                <th>Statistical Concept</th>
+                                <th>Type</th>
 
-      </div>
+                            </tr>
+                        </thead>
+                        <tbody id="tablebody">
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Pop, Age & Sex</td>
+                                <td>Abridged</td>
+                                <td>Whole Area</td>
+                                <td>1950</td>
+                                <td>Census</td>
+                                <td>Albania 1950 Census</td>
+                                <td>DYB</td>
+                                <td>1960</td>
+                                <td>Final</td>
+                                <td>De-Facto</td>
+                                <td>District (standard)</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
     </div>
-</div>
 
 
-<!--aced at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>w
+    <!--aced at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
 
 
 
-    <div class='container-fluid'>
+    <div class='container'>
         <div class="row footer">
             <div class="col-xs-12">
                 <footer>
-                    <h2><img src="images/un-logo-30px.png"> United Nations</h2>
+                    <p id="UN"><img src="images/un-logo-30px.png"> United Nations</p>
                     <p><span>&copy; 2017 UN Population Division, All Rights Reserved.</span></p>
                 </footer>
             </div>

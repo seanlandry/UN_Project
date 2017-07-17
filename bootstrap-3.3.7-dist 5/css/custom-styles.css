@@ -14,8 +14,16 @@ BLUES
 body {
 	font-family: 'Roboto', sans-serif;
 	background-color: #F2F2F2;
+  font-size: 13px;
+  color: #4D4D4D;
 }
+#select{
+  width: 250px;
+  height: 40px;
+  border-radius: 1px
+  background-color: #F2F2F2;
 
+}
 .logo img{
 	margin-right: 8px;
 }
@@ -25,21 +33,50 @@ body {
 	font-weight: bold;
 }
 .btn{
-  border-radius: 0 !important;
+  border-radius: 1px !important;
+  font-size: 12px;
 }
 .btn-default{
   background-color: transparent;
   border: none;
 }
 .btn-primary{
-  border-radius: 0 !important;
+  border-radius: 1px !important;
   background-color: #008FD5;
 }
-.form-control{
-  border-radius: 0 !important;
+.form-control-select{
+  border-radius: 1px !important;
+  background-image: none \9;
+  background-color: #008FD5;
+  color: white;
+  width: 250px;
+  padding-left: 5px;
 }
 .form-inline{
-  border-radius: 0 !important;
+  border-radius: 1px !important;
+}
+input.date-field{
+	width: 50px;
+  height: 30px;
+  border-radius: 1px;
+  background-color: #F2F2F2;
+}
+input[type="number"]{
+  background-color: #F2F2F2;
+
+}
+#topselectors{
+
+}
+
+.form-group{
+  border-radius: 1px !important;
+  background-color: #F2F2F2;
+}
+.input[type=number]{
+  background-color: #F2F2F2 !important;
+  width: 50px;
+  height: 30px;
 }
 
 #reset{
@@ -49,6 +86,13 @@ body {
 .h-row {
 	background-color: #FFF;
 	border-bottom: solid 1px #E5E5E5;
+}
+p{
+  font-weight: 400;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: #191919;
+  display: inline;
 }
 
 .header {
@@ -82,11 +126,20 @@ body {
 	font-size: 16px;
 	font-weight: normal;
 }
+.button-group{
+  background-color: #323232:
+}
 
 .filter {
 	margin: 16px 0;
 }
-
+/*#dropdown-menu{
+  width: 190px;
+  background-color: #323232;
+  height: 30px;
+  font-size: 11px;
+  color: #ffffff;
+}*/
 .data {
 	border: solid 1px #CCC;
 	margin-bottom: 50px;
@@ -96,4 +149,23 @@ body {
   background-color: blue;
   height: 10%;
 
+}
+footer{
+  display: inline;
+  height: 21px;
+  font-size: 21px;
+}
+span{
+  float: right;
+  font-weight: 500;
+  font-size: 13px;
+  color:#4d4d4d;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+  padding-left: 30px;
+  text-align: right;
+}
+#UN{
+	font-size: 21px;
 }
