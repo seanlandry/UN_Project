@@ -23,13 +23,28 @@
       <![endif]-->
 </head>
 
+<div class="cont-filter">
+<span class="close">X</span>
+    <h2>Filters</h2>
+    <h3>Age Distribution<span class="info">i</span></h3>
+    <div class="filter-row"><input type="radio" name="age-distribution" value="abridged">Abridged<br></div>
+    <div class="filter-row"><input type="radio" name="age-distribution" value="complete">Complete<br></div>
+
+    <h3>Location Type<span class="info">i</span></h3>
+
+    <div class="filter-row"><input type="checkbox" name="location" value="WholeArea">Whole Area</div>
+    <div class="filter-row"><input type="checkbox" name="location" value="Rural">Rural</div>
+    <div class="filter-row"><input type="checkbox" name="location" value="Urban">Urban</div>
+
+</div>
+
 <body id="data-browser">
 
 <!-- Sean's comment -->
 
     <!--Start Container-->
 
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="row header">
             <div class="col-xs-6 logo"><img src="images/un-logo-50px.png">Data Browser</div>
@@ -776,15 +791,17 @@
 
 
 
-    <div class='container'>
-        <div class="row footer">
-            <div class="col-xs-12">
+    <div class="container-fluid">
+       <div class="row">
+
+     
                 <footer>
                     <p id="UN"><img src="images/un-logo-30px.png"> United Nations</p>
-                    <p><span>&copy; 2017 UN Population Division, All Rights Reserved.</span></p>
+                    <p class="copyright">&copy; 2017 UN Population Division, All Rights Reserved.</p>
                 </footer>
-            </div>
-        </div>
+           
+</div>
+
     </div>
 
 
