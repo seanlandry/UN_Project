@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>(UN logo) Data Browser</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/custom-styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body id="data-browswer">
+
+      <div class='container'>
+
+
+<div class="row header">
+   <div class="col-xs-8" style="background-color: red;"> <img src="images/un-logo-50px.png">UN Data Browser</div>
+   <div class="col-xs-4">John Doe</div>
+</div>
+
+
+        <div class="row">
+          <div class="col-xs-12">
+            <h1 class="identity"><img src="images/un-logo-50px.png">UN Data Browser</h1>
+            <div class="col-sm-4">
+              <button type="button" class="btn btn-primary btn-lg">Add New Series</button>
+              <div class="dropdown" id="UserSettings">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  John Doe   <span class="caret"></span>
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Edit Profile</a>
+                  <a class="dropdown-item" href="#">Settings</a>
+                  <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+              </div>
+
+            </div>
+            <div class="dropdown" id="PopAgeSex">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Population, Age and Sex   <span class="caret"></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Item one</a>
+                <a class="dropdown-item" href="#">Item two</a>
+                <a class="dropdown-item" href="#">Item three</a>
+              </div>
+            </div>
+            <div class="dropdown" id="Country">
+              <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Afghanistan   <span class="caret"></span>
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">first country</a>
+                <a class="dropdown-item" href="#">second country</a>
+                <a class="dropdown-item" href="#">third</a>
+              </div>
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon" id="Date">DATES</span>
+              <input type="text" class="form-control" placeholder="from" aria-describedby="date">
+              <input type="text" class="form-control" placeholder="to" aria-describedby="date">
+            </div>
+            <h5>reset</h5>
+            <!-- Add function to reset form -->
+
+
+            <p class="results">Showing <strong>17</strong><strong> Data Records</strong> for <strong>Population by Age and Sex</strong> in <strong>Afghanistan</strong>
+            </p>
+
+            <br/>
+            <div class="container">
+              <div class="row">
+               <div class="col-lg-12">
+                 <div class="button-group">
+                  <button type="button" class="btn btn-default btn-sm dropdown-toggle" data-toggle="dropdown"><i class="fa fa-sliders">Filter</i> <span class="caret"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="#" class="small" data-value="Filters" tabIndex="-1">Filters</a></li>
+                    <li><a href="#" class="small" data-value="AgeDistribution" tabIndex="-1">Age Distribution</a></li>
+                    <li><a href="#" class="small" data-value="Abridged" tabIndex="-1"><input type="radio"/>&nbsp;Abridged</a></li>
+                    <li><a href="#" class="small" data-value="Completed" tabIndex="-1"><input type="radio"/>&nbsp;Completed</a></li>
+                    <li><a href="#" class="small" data-value="Locationtype" tabIndex="-1">Location Type</a></li>
+
+                    <li><a href="#" class="small" data-value="WholeArea" tabIndex="-1"><input type="checkbox"/>&nbsp;Whole Area</a></li>
+                    <li><a href="#" class="small" data-value="Rural" tabIndex="-1"><input type="checkbox"/>&nbsp;Rural</a></li>
+                    <li><a href="#" class="small" data-value="Urban" tabIndex="-1"><input type="checkbox"/>&nbsp;Urban</a></li>
+                    <li><a href="#" class="small" data-value="TypeOfSubgroup" tabIndex="-1">Type of Subgroup</a></li>
+                    <li><a href="#" class="small" data-value="Total" tabIndex="-1"><input type="checkbox"/>&nbsp;Total</a></li>
+                    <li><a href="#" class="small" data-value="DataProcessType" tabIndex="-1">Data process Type</a></li>
+                    <li><a href="#" class="small" data-value="Census" tabIndex="-1"><input type="checkbox"/>&nbsp;Census</a></li>
+                    <li><a href="#" class="small" data-value="Estimate" tabIndex="-1"><input type="checkbox"/>&nbsp;Estimate</a></li>
+                    <li><a href="#" class="small" data-value="Process" tabIndex="-1">Process info</a></li>
+                    <li><a href="#" class="small" data-value="Process1" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 1</a></li>
+                    <li><a href="#" class="small" data-value="Process2" tabIndex="-1"><input type="checkbox"/>&nbsp;Process 2</a></li>
+                    <li><a href="#" class="small" data-value="Source" tabIndex="-1">Source</a></li>
+                    <li><a href="#" class="small" data-value="Source1" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 1</a></li>
+                    <li><a href="#" class="small" data-value="Source2" tabIndex="-1"><input type="checkbox"/>&nbsp;Source 2</a></li>
+                    <li><a href="#" class="small" data-value="StatisticalConcept" tabIndex="-1">Statistical Concept</a></li>
+                    <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 1</a></li>
+                    <li><a href="#" class="small" data-value="StatisticalConcept1" tabIndex="-1"><input type="checkbox"/>&nbsp;Statistical Concept 2</a></li>
+                    <li><a href="#" class="small" data-value="DataType" tabIndex="-1">Data Type</a></li>
+                    <li><a href="#" class="small" data-value="DataType1" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 1</a></li>
+                    <li><a href="#" class="small" data-value="DataType2" tabIndex="-1"><input type="checkbox"/>&nbsp;Data Type 2</a></li>
+                    <li><button type="button" class="btn btn-primary btn-lg">Apply</button></li>
+
+
+                  </ul>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cont-table">
+            <table class="table table-striped">
+              <thead>
+                <tr id="TableHeader">
+                  <th>#</th>
+                  <th>Indicator</th>
+                  <th>Age Distribution</th>
+                  <th>location Type</th>
+                  <th>Ref Year</th>
+                  <th>Process</th>
+                  <th>Catalog</th>
+                  <th>Source</th>
+                  <th>Source Year</th>
+                  <th>Status</th>
+                  <th>Statistical Concept</th>
+                  <th>Type</th>
+
+                </tr>
+              </thead>
+              <tbody id="tablebody">
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+                <tr>
+                  <th scope="row">17</th>
+                  <td>Pop, Age & Sex</td>
+                  <td>Abridged</td>
+                  <td>Whole Area</td>
+                  <td>1950</td>
+                  <td>Census</td>
+                  <td>Albania 1950 Census</td>
+                  <td>DYB</td>
+                  <td>1960</td>
+                  <td>Final</td>
+                  <td>De-Facto</td>
+                  <td>District (standard)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <footer>
+      <p>(UN logo)</p>
+      <p>&copy; 2017 UN Population Division, All Rights Reserved.</p>
+
+    </footer>
+
+  </body>
+  </html>
+  <form class="form-inline" role="form">
+     <div class="form-group">
+        <label for="DATES">DATES</label>
+  	  <input type="number" class="form-control" id="DATES">
+     </div>
+     <div class="form-group">
+       <label for="DATES">DATES</label>
+     <input type="number" class="form-control" id="DATES">
+   </div>
+  </form>
